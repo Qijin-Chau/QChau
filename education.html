@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styling/main_style.css">
+
+	<!-- Icon library for the bars menu on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		/* 2 COLUMN STYLE */
+
+		/* Overarching table */
+		ul.table {
+			list-style-type: none;
+			overflow: hidden;
+			margin: auto;
+			width: 75%;
+			padding: 0;
+		}
+		@media (max-width: 1000px) {
+			ul.table {
+				width: 85%;
+			}
+		}
+		@media (max-width: 767px) {
+			ul.table {
+				width: 75%;
+			}
+		}
+
+		/* Column border */
+		ul.table li {
+			display: block;
+			float: left; 
+			width: 50%;
+		}
+		@media (max-width: 767px) {
+			ul.table li {
+				float: none;
+				width: 100%;
+			}
+		}
+
+		/* Each column */
+		ul.column {
+			list-style-type: none;
+			padding: 0;
+		}
+		/* Actual elements */
+		ul.column li {
+			font-size: 1.5em;
+			text-align: center; 
+			color: white;
+			box-sizing: border-box;
+			float: none;
+			margin: auto;
+			width: 85%;	
+		}
+		ul.column li a {
+			background-color: #506E8C;
+			position: relative;
+			text-decoration: none;
+			color: white;
+			display: block;
+			box-sizing: border-box;
+			margin: 0px auto 15% auto;
+			padding: 7.5% 0px;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Image styling */
+		img {
+			max-width: 90%;
+			height: auto;
+		}
+		div.pic_text {
+			font-family: arial;
+			color: black;
+			background-color: #AAA;
+			max-width: 100%;
+			position: absolute;
+			top: 85%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 10px;
+			white-space: nowrap;
+			border: solid 0.2px;
+		}
+		/* Image captions */
+		.img-caption {  }
+	</style>
+	
+	<!-- jQuery Effects -->
+	<script src="Scripts/fade.js"></script>
+	<script type="text/javascript">
+		/*fade in*/
+		$(document).ready(function() {
+			$("ul.table").fadeIn(1500);
+		});
+		/* hover */
+		$(document).ready(function() {
+  			$("ul.column li a").hover(function() {
+    			$(this).children("div").css("background-color", "#AAA");
+    			$(this).css("background-color", "#5F96CD");
+  			}, function() {
+    			$(this).children("div").css("background-color", "#AAA");
+    			$(this).css("background-color", "#506E8C");
+  			});
+		});
+	</script>
+
+</head>
+<body>
+	<!-- Standard Nav Bar -->
+	<div class="nav" id="myNav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="education.html" class="active">Education</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="javascript:void(0);" class="icon" onclick="showNav()">
+			<script src="Scripts/navbar.js"></script>
+	 		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<p style="font-size: 18px; text-align: center; margin-top: 30px;"> 
+		<em> Click below </em> to check out my education history 
+	</p>
+
+	<!-- 2-Column Table -->
+	<ul class="table" style="display: none">
+		<li>
+			<ul class="column">
+				<li>
+					<a href="Tufts.html">
+						<img src="Pictures/Tufts University.jpg">
+						<!-- &#xA9; Photo by Alonso Nichols/Tufts University -->
+						
+						<div class="pic_text"> Tufts University </div>
+					</a>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			<ul class="column">
+				<li>
+					<a href="https://somerville.k12.ma.us/schools/somerville-high-school" target="_blank">
+						<img src="Pictures/Somerville High School.jpg">
+						<!-- &#xA9; Photo by Wikipedia.com -->
+
+						<div class="pic_text"> Somerville High </div>
+					</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styling/main_style.css">
+
+	<!-- Icon library for the bars menu on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Icon library for little emotes -->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+	<style type="text/css">
+		#mylife {
+			font-size: 25px;
+			font-family: garamond;
+			font-style: oblique;
+			border-style: dotted;
+			border-width: 1.5px;
+			border-radius: 20px;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+			width: 60%;
+			padding: 2px;
+		}
+		@media (max-width: 767px) {
+			#mylife {
+				width: 90%;
+			}
+		}
+
+		#heatr-link {
+			color: #FF4000;
+		}
+		#heatr-link:hover {
+			opacity: 0.7;
+		}
+
+		.fas {
+			font-size: 18px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 5px;
+			width: 20px;
+			padding: 3px;
+		}
+		.fa-graduation-cap {
+			background: #5191CE;
+			color: #FFF;
+		}
+		.fa-user {
+			background: #000;
+			color: #FFF;
+		}
+		.fa-fire {
+			background: #E25822;
+			color: #FDCF58;
+		}
+		.fa-utensils {
+			background: #4A4A4A;
+			color: #FFF;
+		}
+		.fa-school {
+			background: #FF3636;
+			color: #FFF;
+		}
+		.fa-pepper-hot {
+			background: #A81612;
+			color: #FFF;
+		}
+		.fa-file-medical {
+			background: #BD0202;
+			color: #FFF;
+		}
+
+		.image {
+			width: 375px;
+			height: 225px;
+		}
+		@media (max-width: 900px) {
+			.image {
+				width: 325px;
+			}
+		}
+	</style>
+
+	<!-- jQuery Effects -->
+	<script src="Scripts/fade.js"></script>
+	<script type="text/javascript">
+		/*fade in*/
+		$(document).ready(function() {
+			$(".banner").fadeIn(2000);
+		});
+	</script>
+
+</head>
+<body>
+	<!-- Name Banner -->
+	<div class="banner"></div>
+	
+	<!-- Standard Nav Bar -->
+	<div class="nav" id="myNav">
+		<a href="index.html" class="active">Home</a>
+		<a href="about.html">About</a>
+		<a href="education.html">Education</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="javascript:void(0);" class="icon" onclick="showNav()">
+			<script src="Scripts/navbar.js"></script>
+	 		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	
+	<p id="mylife"> Q's life... so far </p>
+
+	<!-- Timeline -->
+	<div class='timeline'>
+		<ul>
+			<li>
+				<div class='content'>
+					<h3 style="color: #012F62;"> 
+						Tufts University <i class="fas fa-graduation-cap"></i> 
+					</h3>
+					<div class='timeline_description'> Student </div> 
+					<p>
+						Currently Qijin is attending Tufts University in Medford, Massachusetts
+						as an undergraduate of the Class of 2022. He is majoring in Computer 
+						Science and minoring in Mathematics in the School of Engineering. 
+						Alongside his studies, Qijin is a player on the Tufts ultimate frisbee team.
+					</p>
+				</div>
+				<div class='time'>
+					<h4> September 2018 - Present </h4>
+				</div>
+				<div class="timeline-pic"> 
+					<img class="image" src="Pictures/TimelinePics/Tufts.jpg">
+					<figcaption style="font-size: 10px;">
+						&#xA9; Photo by Alonso Nichols/Tufts University
+					</figcaption>
+				</div>
+			</li>
+			
+			<li>
+				<div class='content'>
+					<h3 style="color: #5191CE;"> 
+						Web Design TA <i class="fas fa-user"></i> 
+					</h3>
+					<div class='timeline_description'> Teaching Assistant </div> 
+					<p>
+						During the Fall of Qijin's Junior year, he TA'ed for a web design
+						class at Tufts that he took the spring prior. Every week Qijin 
+						would grade students work, assist students during office hours, 
+						and occassionally hold tutoring sessions. The topics included 
+						HTML, CSS, jQuery, and Javascript for the front-end and MongoDB, 
+						Node.js, and Heroku for the back-end.
+					</p>
+				</div>
+				<div class='time'>
+					<h4> September 2020 - Dec. 2020 </h4>
+				</div>
+				<div class="timeline-pic"> 
+					<img class="image" src="Pictures/TimelinePics/Comp 20 TA.jpg">
+					<figcaption style="font-size: 10px;">
+						&#xA9; Photo by W3 Lab
+					</figcaption>
+				</div>
+			</li>
+
+			<li>
+				<div class='content'>
+					<h3>
+						<a id="heatr-link" href="https://www.heatr.io/" target="_blank">HEATR</a> 
+						<i class="fas fa-fire"></i> 
+					</h3>
+					<div class='timeline_description'> Intern </div> 
+					<p>
+						In Summer 2020, Qijin interned as a Software Engineer for HEATR.
+						His tasks consisted of improving HEATR's Twitter Bot, redesigning 
+						their website, working with the company's database, and creating 
+						various bet and win probability calculators. The internship was remote 
+						due to Covid-19 however the experience was still absolutely worthwhile.
+					</p>
+				</div>
+				<div class='time'>
+					<h4> May 2020 - August 2020 </h4>
+				</div>
+				<div class="timeline-pic"> 
+					<img class="image" src="Pictures/TimelinePics/HEATR.jpg">
+					<figcaption style="font-size: 10px;">
+						&#xA9; Photo by Tyler Williams/HEATR
+					</figcaption>
+				</div>
+			</li>	
+			
+			<li>
+				<div class='content'>
+					<h3 style="color: #CF1515;"> 
+						Little Q Hot Pot <i class="fas fa-utensils"></i> 
+					</h3>
+					<div class='timeline_description'> Waiter </div> 
+					<p>
+						During Qijin's Freshmen and Sophomore year in college, he worked
+						part-time on the weekends as a waiter at a local restaurant
+						in Arlington, Massachusetts. Every shift, he would serve and interact 
+						with customers. After becoming an experienced waiter, he also began 
+						training new employees on the restaurant's policies and procedures.
+					</p>
+				</div>
+				<div class='time'>
+					<h4> August 2018 - Feb. 2020 </h4>
+				</div>
+				<div class="timeline-pic"> 
+					<img class="image" src="Pictures/TimelinePics/Little Q.jpg">
+					<figcaption style="font-size: 10px;">
+						&#xA9; Photo by Natalie Southwick/Boston.com
+					</figcaption>
+				</div>
+			</li>	
+			
+			<li>
+				<div class='content'>
+					<h3 style="color: #086BC2;"> 
+						Somerville High School <i class="fas fa-school"></i> 
+					</h3>
+					<div class='timeline_description'> Student </div> 
+					<p>
+						Qijin attended his local high school in Somerville, Massachusetts.
+						Somerville High School is a public, diverse high school that held
+						roughly 1,000 students at the time. At Somerville High, Qijin 
+						participated in various clubs and sports and ended up graduating 
+						at the top of his class.
+					</p>
+				</div>
+				<div class='time'>
+					<h4> September 2014 - May 2018 </h4>
+				</div>
+				<div class="timeline-pic"> 
+					<img class="image" src="Pictures/TimelinePics/Somerville High.jpg" height="200">
+					<figcaption style="font-size: 10px;">
+						&#xA9; Photo by Somerville Public Schools
+					</figcaption>
+				</div>
+			</li>
+			
+			<li>
+				<div class='content'>
+					<h3 style="color: #451400;"> 
+						Chipotle Mexican Grill <i class="fas fa-pepper-hot"></i> 
+					</h3>
+					<div class='timeline_description'> Crew Member </div> 
+					<p>
+						Chipotle was Qijin's first official job. During his Senior year,
+						he worked part-time as a crew member. By the end, he was familiar
+						with almost every position at the restaurant and most importantly,
+						his burrito wrapping and guacamole making skills were impeccable.  
+					</p>
+				</div>
+				<div class='time'>
+					<h4> November 2017 - May 2018 </h4>
+				</div>
+				<div class="timeline-pic"> 
+					<img class="image" src="Pictures/TimelinePics/Chipotle.jpg" height="210">
+					<figcaption style="font-size: 10px;">
+						&#xA9; Photo by Tonya Garcia/MarketWatch.com
+					</figcaption>
+				</div>
+			</li>
+			
+			<li>
+				<div class='content'>
+					<h3 style="color: #7000A1;"> 
+						Somerville Positive Forces <i class="fas fa-file-medical"></i> 
+					</h3>
+					<div class='timeline_description'> Youth Leader </div> 
+					<p>
+						In high school, Qijin volunteered as a local youth leader for the 
+						City of Somerville. The youth leaders led as role models. They 
+						held the responsibility of positively influencing the Somerville youth
+						and informing them about common misconceptions regarding drug and alcohol 
+						use among the teens in the community.
+					</p>
+				</div>
+				<div class='time'>
+					<h4> November 2016 - April 2017 </h4>
+				</div>
+				<div class="timeline-pic"> 
+					<img class="image" src="Pictures/TimelinePics/SPF.png">
+					<figcaption style="font-size: 10px;">
+						&#xA9; Photo by the City of Somerville
+					</figcaption>
+				</div>
+			</li>
+			
+			<div style="clear: both;"></div>			
+		</ul>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styling/main_style.css">
+
+	<!-- Icon library for the bars menu on small screens and social media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		body {
+			margin-bottom: 10px;
+		}
+
+		#title {
+			font-size: 30px;
+			font-weight: bold;
+			font-family: arial;
+			text-align: center;
+			margin-top: 15px;
+		}
+		#title2 {
+			font-size: 25px;
+			font-weight: normal;
+			font-style: italic;
+			margin-bottom: 25px;
+		}
+		#text {
+			font-family: helvetica;
+		}
+
+		#icons {
+			text-align: center;
+			margin-bottom: 0;
+		}
+		#connect-text {
+			font-size: 12px;
+			font-style: italic;
+		}
+		.fa {
+			font-size: 30px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 50%;
+			width: 30px;
+			padding: 20px;	
+			margin-top: 10px;
+		}
+		.fa:hover {
+			opacity: 0.7;
+		}
+		.fa-github {
+			background: #000000;
+			color: #FFFFFF;
+		}
+		.fa-facebook {
+			background: #3B5998;
+			color: #FFFFFF;
+		}
+		.fa-instagram {
+			background: #125688;
+			color: #FFFFFF;
+		}
+
+		#emen-link:hover {
+			opacity: 0.7;
+		}
+	</style>
+
+	<!-- jQuery Effects -->
+	<script src="Scripts/fade.js"></script>
+	<script type="text/javascript">
+		/*fade in*/
+		$(document).ready(function() {
+			$('#QC').fadeIn(1500);
+		});
+	</script>
+
+</head>
+<body>
+	<!-- Standard Nav Bar -->
+	<div class="nav" id="myNav">
+		<a href="index.html">Home</a>
+		<a href="about.html" class="active">About</a>
+		<a href="education.html">Education</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="javascript:void(0);" class="icon" onclick="showNav()">
+			<script src="Scripts/navbar.js"></script>
+	 		<i class="fa fa-bars" style="padding: 0px; width: auto; font-size: 17px; margin-top: 0px;">	
+	 		</i>
+		</a>
+	</div>
+
+	<!-- Photo + Text -->
+	<div class="photo-text">
+		<div id="title">
+			Qijin <em> "kuh-chin" </em> Chau <br>
+			<div id="title2"> Also goes by Q </div>
+		</div>
+		
+		<div class="featured-image">
+			<img src="Pictures/Qijin.jpg" alt="This is Qijin" id="QC" style="display: none;" />
+		</div>
+		
+		<div class="description">
+	    	<p id="text">
+				Q grew up in the city of Somerville, Massachusetts, home to annual Honk Festivals and Somerville's very own Porchfest where two days a year locals go around the city to hear a variety of amazing unique music by Somerville's very own. <br><br>
+
+				Q attended his hometown high school, Somerville High. In high school, he decided to partake in his the schools' vocational program, where he chose to study drafting alongside the typical math, english, science, and social studies classes. While not aiming to make a career out of drafting, Q truly enjoyed it and throughout the years became proficient in various CAD software like AutoCAD, SolidWorks, and Autodesk Revit. Drafting also came with many perks like the occasional Minecraft competition and a 3-D printer that the students got to experiment with. Eventually by senior year, Q chose to specialize in technical drafting and work closely with SolidWorks and focus on machine parts. Also during senior year, he took on his skill to compete in a technical and career competition called SkillsUSA where he won gold in districts and shot just short of medaling at states. After high school, Q decided to leave his drafting days behing for now and start a new chapter in his life. <br><br>
+
+				Q was lucky enough to be admitted and able to attend his dream school, Tufts University. Tufts practically being in his backyard gave Q the best of both worlds for a college experience and staying close to family which he deeply values. <br><br>
+
+				Currently he is Junior at Tufts University majoring in computer science and minoring in mathematics. Even though Q has never programmed before college, he always knew that he would pursue computer science in college. He will never forget the day he wrote his first program. The famous <em>Hello World</em>. Since then he has taken a variety of CS courses ranging from data structures to algorithms to machine learning. <br><br>
+
+				On top of his studies, Q is a member of the Tufts ultimate frisbee team where he was fortunate enough to earn a spot on the 
+				<a id="emen-link" href="http://www.tuftsmensultimate.org/" target="_blank">Emen</a>, the highest level of three teams. Being a part of the Emen means a lot to Q and requires a large commitment throughout the school year, especially in the spring when the official season takes place. In the spring, there would be at least a mandatory practice, lift, or track workout each day. Then, once or twice a month, the team would travel to different states around the country to compete in tournaments at a Division 1 level. To Q and the rest of his teammates, the Emen are more than just teammates, they are family and lifelong friends that are always there for whatever support anyone of them needs. <br><br>
+
+				Apart from school and frisbee you can find Q doing some of his favorite hobbies which include playing basketball, going to the movie theaters, trying exotic foods, hiking, and travelling. On top of his active lifestyle, Q loves various foods and beverages, including korean barbeque, mexican food, bubble tea, and takis. <br><br>
+	    	</p>
+	    	
+	    	<div id="icons">
+	    		<div id="connect-text"> Connect with Q <div>
+	    		<a href="https://github.com/Qijin-Chau" target="_blank" class="fa fa-github"></a>
+	    		<a href="https://www.facebook.com/profile.php?id=100013301177949" target="_blank" class="fa fa-facebook"></a>
+	    		<a href="https://www.instagram.com/chauqijin/?hl=en" target="_blank" class="fa fa-instagram"></a>
+	    	</div>
+		
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* 4-COLUMN DISPLAY RULES */
+body, html {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.back_button {
+    background-color: #FFFFFF;
+    padding: 10px 10px;
+    margin: 4px 4px; 
+    float: left;
+    border-radius: 15px;
+}
+
+.back_button:hover {
+    background-color: #D7DBDD;
+}
+
+
+.left_arrow {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.school_year {
+    display: block; 
+    background-color: #5191CE; 
+    padding: 40px 0 40px 0; 
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold;
+    color: #50351A;
+}
+
+.tbc {
+    text-align: center;
+    padding-top: 25px;
+    font-family: arial;
+}
+
+.description {
+    display: none;
+    padding: 5px;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.show_desc {
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block; 
+    float: right; 
+    margin-right: 5px;
+    color: #0000EE;
+    font-size: 13px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.topleft-pane {
+    width: 15%;
+    height: 100px;
+    float: left;
+    border-collapse: collapse;
+    background-color: #012F62;
+}
+
+.topright-pane {
+    width: 85%;
+    height: 100px;
+    float: left;
+    border-collapse: collapse;
+    background-color: #012F62;
+}
+
+.first-pane {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: #D7DBDD;
+    border-collapse: collapse;
+}
+
+.second-pane {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: #F2F2F2;
+    border-collapse: collapse;
+}
+
+.third-pane {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background-color: #D7DBDD;
+    border-collapse: collapse;
+}
+
+.fourth-pane {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background-color: #F7F9F9;
+    border-collapse: collapse;
+}
+
+.class_block {
+    padding: 10px 0 5px 5px;
+    font-family: helvetica;
+    color: #3B4B5E;
+}
+
+.class_label {
+    margin-left: 2px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+    color: #2A7ADB;
+}
+
+.semester {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: verdana;
+    color: #242424;
+}
+
+.files {
+    margin-left: 10px;       
+}
+
+/* 4-COLUMN Responsiveness */
+@media (max-width: 1000px) {
+    .first-pane, .second-pane, .third-pane, .fourth-pane {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+}
+@media (max-width: 767px) {
+    .back_button {
+        font-size: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .back_button {
+        width: 100%;
+    }
+    .left_arrow {
+        border-width: 0 1.5px 1.5px 0;
+    }
+}

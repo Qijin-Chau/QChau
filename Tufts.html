@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styling/main_style.css">
+	<link rel="stylesheet" type="text/css" href="Styling/fourcolumn_style.css">
+
+	<style type="text/css">
+		#title-big, #title-small {
+			font-size: 50px;
+			text-align: center;
+			color: white;
+			margin-right: 15%;
+			margin-top: 15px;	
+			height: 100%;
+		}
+		@media (min-width: 480px) {
+			#title-small {
+				display: none; 
+			}
+		}
+		@media (max-width: 480px) {
+			#title-big {
+				display: none;
+			}
+		}
+
+		.arrow-right {
+			display: inline-block;
+			width: 0; 
+			height: 0; 
+			border-top: 5px solid transparent;
+		 	border-bottom: 5px solid transparent;
+			border-left: 5px solid #292929;	
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="topleft-pane">
+			<a href="education.html"> 
+				<button class="back_button">
+					<i class="left_arrow"></i><i class="left_arrow"></i> Go back
+				</button> 
+			</a>
+		</div>
+		
+		<div class="topright-pane"> 
+			<div id="title-big"> Tufts University </div> 
+			<div id="title-small"> Tufts </div>
+		</div>
+		
+
+		<!-- 						F R E S H M A N   Y E A R 						-->
+		<div class="first-pane">
+			<header class="school_year"> Freshman Year </header>
+			<div>
+				<div class="show_desc" style="float: right; font-size: 15px;" onclick="showAllFreshman()">
+					Show all
+				</div>
+				<p class="semester"> 1st Semester</p>  
+				<p class="class_label"> Classes: </p>
+				
+				<div class="class_block"> 
+					Applications In Engineering
+					<span class="show_desc" onclick="showDescription('EN01')"> Show </span>  
+				</div>
+				<div class="files">
+					<div class="arrow-right"></div>
+					<a href="https://github.com/Qijin-Chau/Battleship" target="_blank">
+						Battleship
+					</a>
+				</div>
+				<div class="description" id="EN01" > 
+					Introduction of various concepts in engineering with emphasis on project work, engineering ethics, and engineering design process. Taught in MATLAB.
+				</div>
+
+				<div class="class_block"> 
+					Calculus 1 
+					<span class="show_desc" onclick="showDescription('Math32')"> Show </span> 
+				</div>
+				<div class="description" id="Math32" > 
+					Differential and integral calculus. Topics inlcude limits and continuity, the derivative and techniques of differentiation, extremal problems, related rates, the definite integral, Fundamental Theorem of Calculus, derivatives and integrals of trigonometric functions, and logarithmic and exponential functions.
+				</div>
+
+				<div class="class_block"> 
+					General Physics 1 W/lab
+					<span class="show_desc" onclick="showDescription('Phy11')"> Show </span>
+				</div> 
+				<div class="description" id="Phy11" > 
+					Principles of classical mechanics, fluids, heat, thermodynamics. Calculus based.
+				</div>
+
+				<div class="class_block"> 
+					Elementary Chinese 1
+					<span class="show_desc" onclick="showDescription('Chn01')"> Show </span>
+				</div> 
+				<div class="description" id="Chn01" > 
+					Active command of both oral and written Chinese stressed with emphasis on pronunciation and conversation, pinyin and characters, basic vocabulary and structures. 
+				</div>
+
+				<div class="class_block"> 
+					Engineering Education
+					<span class="show_desc" onclick="showDescription('ED119')"> Show </span>
+				</div> 
+				<div class="files">
+					<div class="arrow-right"></div>
+					<a href="Files/Interview.pdf" target="_blank">
+						Interview
+					</a>
+				</div>
+				<div class="description" id="ED119" > 
+					Exploration of topics of engineering and engineering education considering both historical and emerging perspectives. Design of instructional plans and example lessons to teach specific engineering and design concepts to K-12 students.
+				</div>
+
+				<br>
+				<p class="semester"> 2nd Semester</p>  
+				<p class="class_label"> Classes: </p>
+
+				<div class="class_block"> 
+					Intro Computer Science
+					<span class="show_desc" onclick="showDescription('Comp11')"> Show </span>
+				</div> 
+				<div class="files">
+					<div class="arrow-right"></div>
+					<a href="https://github.com/Qijin-Chau/2048" target="_blank">
+						2048
+					</a>
+				</div>
+				<div class="description" id="Comp11" > 
+					Explore the fundamental features of a high level, general purpose programming language called C++ and learn how to use it as a tool for problem solving. Also, the performance of solutions are considered and how to apply both analytical and empirical assessment techniques. Furthermore, the students will dive into the Unix operating system as a context for problem solving. 
+				</div>
+
+				<div class="class_block"> 
+					Calculus 2 
+					<span class="show_desc" onclick="showDescription('Math34')"> Show </span>
+				</div> 
+				<div class="description" id="Math34" > 
+					Applications of the integral, techniques of integration, separable differential equations, improper integrals, sequences, series, convergence tests, Taylor series, Polar coordinates, and complex numbers.
+				</div>
+
+				<div class="class_block"> 
+					Chemistry Fundamentals W/lab
+					<span class="show_desc" onclick="showDescription('Chem01')"> Show </span>
+				</div> 
+				<div class="description" id="Chem01" > 
+					Atomic and molecular structure, chemical nomenclature, intermolecular forces and states of matter, the relation of structure and bonding to physical and chemical properties of matter, patterns of chemical reactions, stoichiometry, thermochemistry, and properties of solutions.
+				</div>
+
+				<div class="class_block"> 
+					Elementary Chinese 2
+					<span class="show_desc" onclick="showDescription('Chn02')"> Show </span>
+				</div> 
+				<div class="description" id="Chn02" > 
+					Active command of both oral and written Chinese stressed with emphasis on pronunciation and conversation, pinyin and characters, basic vocabulary and structures. 
+				</div>
+			</div>	
+		</div>
+
+
+		<!-- 						S O P H O M O R E   Y E A R 				-->
+		<div class="second-pane">
+			<header class="school_year" style="background-color: #654321; color: #5DADE2;"> Sophomore Year </header>
+			<div>
+				<div class="show_desc" style="float: right; font-size: 15px;" onclick="showAllSophomore()">
+					Show all
+				</div>
+				<p class="semester"> 1st Semester</p>  
+				<p class="class_label"> Classes: </p>
+				
+				<div class="class_block"> 
+					Data Structures
+					<span class="show_desc" onclick="showDescription('Comp15')"> Show </span>  
+				</div>
+				<div class="files">
+					<div class="arrow-right"></div>
+					<a href="https://github.com/Qijin-Chau/Gerp" target="_blank">
+						Gerp
+					</a>
+					<br>
+					<div class="arrow-right"></div>
+					<a href="https://github.com/Qijin-Chau/Ricochet-Robots" target="_blank">
+						Ricochet Robots
+					</a>
+				</div>
+				<div class="description" id="Comp15" > 
+					Studied topics include linked lists, trees, graphs, dynamic storage allocation, and recursion.
+				</div>
+
+				<div class="class_block"> 
+					Discrete Mathematics
+					<span class="show_desc" onclick="showDescription('Comp61')"> Show </span> 
+				</div>
+				<div class="description" id="Comp61" > 
+					Sets, relations and functions, logic and methods of proof, combinatorics, graphs and digraphs.
+				</div>
+
+				<div class="class_block"> 
+					Intro Electrical Systems W/lab
+					<span class="show_desc" onclick="showDescription('ES03')"> Show </span>
+				</div> 
+				<div class="description" id="ES03" > 
+					Study and practice circuit elements, selected network theorems, controlled sources, energy and power, natural response and complete response of first order circuits, steady state sinusoidal behavior, algebra of complex numbers, phasors, impedance, average and reactive power, analog and digital systems, frequency response and filters, and measurements and instrumentation.
+				</div>
+
+				<div class="class_block"> 
+					Intermediate Chinese
+					<span class="show_desc" onclick="showDescription('Chn03')"> Show </span>
+				</div> 
+				<div class="description" id="Chn03" > 
+					Continuation of Chinese 1 and 2 with emphasis on basic vocabulary and structures, conversation, reading, and writing.
+				</div>
+
+				<div class="class_block"> 
+					Fundamental Biological Systems Engineering
+					<span class="show_desc" onclick="showDescription('ES11')"> Show </span>
+				</div>
+				<div class="files">
+					<div class="arrow-right"></div>
+					<a href="Files/ES11 Paper.pdf" target="_blank">
+						Paper Summary
+					</a>
+				</div> 
+				<div class="description" id="ES11" > 
+					Fundamentals of biology in the context of engineering disciplines. Chemical and physical mechanisms underlying biological functions in complex environments. Case studies of relevance in various engineering disciplines, with a focus on cells and information transfer.
+				</div>
+
+				<br>
+				<p class="semester"> 2nd Semester</p>  
+				<p class="class_label"> Classes: </p>
+
+				<div class="class_block"> 
+					Algorithms
+					<span class="show_desc" onclick="showDescription('Comp160')"> Show </span>
+				</div> 
+				<div class="description" id="Comp160" > 
+					Introduction to the study of algorithms. Strategies such as divide-and-conquer, greedy methods, and dynamic programming. Other topics include graph algorithms, sorting, searching, integer arithmetic, hashing, and NP-complete problems.
+				</div>
+
+				<div class="class_block"> 
+					Web Programming
+					<span class="show_desc" onclick="showDescription('Comp20')"> Show </span>
+				</div>
+				<div class="files">
+					<div class="arrow-right"></div>
+					<a href="https://github.com/Qijin-Chau/GetBit" target="_blank">
+						GetBit
+					</a>
+					<br>
+					<div class="arrow-right"></div>
+					<a href="https://github.com/Qijin-Chau/BAG-Website" target="_blank">
+						BAG
+					</a>
+				</div> 
+				<div class="description" id="Comp20" > 
+					An introduction to techniques, principles, and practices of writing computer programs for the World Wide Web. Topics include server and browser capabilities and limits, media types, handlers, limitations, web programming languages, web security, privacy, and commerce.
+				</div>
+
+				<div class="class_block"> 
+					Linear Algebra
+					<span class="show_desc" onclick="showDescription('Math70')"> Show </span>
+				</div> 
+				<div class="description" id="Math70" > 
+					Introduction to the theory of vector spaces and linear transformations over the real or complex numbers, including linear independence, dimension, matrix multiplication, similarity and change of basis, inner products, and eigenvalues and eigenvectors.
+				</div>
+
+				<div class="class_block"> 
+					Intro Digital Electronics W/lab
+					<span class="show_desc" onclick="showDescription('ES04')"> Show </span>
+				</div> 
+				<div class="files">
+					<div class="arrow-right"></div>
+					<a href="Files/ES4 Research Paper.pdf" target="_blank">
+						Research Paper
+					</a>
+					<br> 
+					<div class="arrow-right"></div>
+					<a href="Files/ES4 Final Lab.pdf" target="_blank">
+						Final Lab Report
+					</a>
+				</div>
+				<div class="description" id="ES04" > 
+					Number systems and their conversions. Boolean algebra and Karnaugh map minimizations of Boolean expressions. Logic gates. Analysis and design of combinational logic circuits. Characteristics of various flip-flops. Analysis and design of sequential logic circuits. Design of counter and shift register circuits. Various binary codes and code conversion circuits. Binary arithmetic and arithmetic circuits. Introduction to iterative design.
+				</div>
+
+				<div class="class_block"> 
+					Techquity
+					<span class="show_desc" onclick="showDescription('EXP53')"> Show </span>
+				</div> 
+				<div class="description" id="EXP53" > 
+					Tech + Equity = Techquity. Throughout this course, we seek to engage with three critical, rarely asked questions: How do the systems in our society give me power or disenfranchise me? As a tech student, how do I change/dismantle these systems? What should I do when I get a job at Amazon? In our quest to engage with these questions, the course will have two major components: a hands-on experience with a technical project for a local non-profit, and curriculum centered on building relationships with those fighting various forms of systemic oppression.
+				</div>
+			</div>	
+		</div>
+		
+
+		<!-- 						J U N I O R   Y E A R 						-->
+		<div class="third-pane">
+			<header class="school_year"> Junior Year </header>
+			<div class="tbc"> To be continued... Fall 2020 </div>
+		</div>
+    	
+
+    	<!-- 						S E N I O R   Y E A R 						-->
+    	<div class="fourth-pane">
+    		<header class="school_year" style="background-color: #654321; color: #5DADE2;"> Senior Year </header>
+    		<div class="tbc"> To be continued... Fall 2021 </div>
+    	</div>
+	</div>
+	
+	<script src="Scripts/showdesc.js"></script>
+	
+</body>
+</html>
