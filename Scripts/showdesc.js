@@ -42,3 +42,19 @@ function showAllSophomore() {
 		}
 	}
 }
+
+function showAllJunior() {
+	myIDS = ["Comp131", "Comp40", "Math145", "EM54", "Comp170", "Comp115", "Math42", "SPN02"];
+	
+	for (i = 0; i < myIDS.length; i++) {
+		myVar = document.getElementById(myIDS[i]);
+		if (myVar.style.display === "none") {
+			myVar.style.display = "block";
+			myVar.style.margin = "5px 0 25px 10px";
+			myVar.style.width = "90%";
+			myVar.style.float = "none";
+		} else {
+			myVar.style.display = "none";
+		}
+	}
+}
